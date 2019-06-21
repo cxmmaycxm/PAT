@@ -22,9 +22,9 @@ int main() {
     }
     m %= n;
     if( 0 != m) {
-        reverse(a, a+n-m);
         reverse(a+n-m, a+n);
         reverse(a, a+n);
+        reverse(a, a+n-m);
     }
     for(int i=0; i<n-1; i++) {
         cout << a[i] << " ";
